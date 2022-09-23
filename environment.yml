@@ -1,4 +1,4 @@
-name: EC413_miniproject
+name: EC463_miniproject
 channels:
   - conda-forge
 dependencies:
