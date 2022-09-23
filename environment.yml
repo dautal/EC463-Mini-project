@@ -1,0 +1,12 @@
+name: EC413_miniproject
+channels:
+  - conda-forge
+dependencies:
+  - python=3.8
+  - pip
+  - pip:
+    - pandas==1.5.0
+    - tweepy==3.10.0
+    - botometer==1.6.1
+    - google-cloud==0.34.0
+
