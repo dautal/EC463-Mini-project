@@ -1,4 +1,6 @@
 # EC463-Mini-project
+Python App that analyze twitter user's sentiment and bot score
+
 steps:
 1. conda env create -f environment.yml
 2. conda activate EC463-miniproject
