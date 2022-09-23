@@ -5,7 +5,7 @@ steps:
 3. python test_senitment.py
 
 files:
-environment.yml
-test_scrapping.py (botometer + tweepy)
-test_sentiment.py (google cloud language API)
-miniproject.py (combined WIP)
+1. environment.yml (library version control)
+2. test_scrapping.py (botometer + tweepy)
+3. test_sentiment.py (google cloud language API)
+4. miniproject.py (combined WIP)
