@@ -1,3 +1,4 @@
 # EC463-Mini-project
-This is a readme file
-version 2
+steps:
+1. conda env create -f environment.yml
+2. conda activate EC4630-miniproject
