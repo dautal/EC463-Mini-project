@@ -1,6 +1,7 @@
-import tweepy
 import botometer
+import tweepy
 import pandas as pd
+import re
 from google.cloud import language_v1
 
 '''
@@ -22,8 +23,8 @@ twitter_app_auth = {
   }
 
 # ask for an username
-username = input('Enter username:')
-no_of_tweets = 10
+username = input('Enter username: ')
+no_of_tweets = 20
 
 
 '''
@@ -37,7 +38,7 @@ bom = botometer.Botometer(wait_on_ratelimit=True,
 # Check a single account by screen name
 result = bom.check_account('@'+username)
 
-print(result)
+# print(result)
 
 
 '''
@@ -56,7 +57,7 @@ try:
     tweets = api.user_timeline(screen_name=username, count=no_of_tweets)
 
     #Pulling Some attributes from the tweet
-    attributes_container = [[tweet.created_at, tweet.favorite_count,tweet.source,  tweet.text] for tweet in tweets]
+    attributes_container = [[tweet.created_at, tweet.favorite_count, tweet.source, tweet.text] for tweet in tweets]
 
     #Creation of column list to rename the columns in the dataframe
     columns = ["Date Created", "Number of Likes", "Source of Tweet", "Tweet"]
@@ -67,7 +68,19 @@ except BaseException as e:
     print('Status Failed On,',str(e))
     time.sleep(3)
 
-print(tweets_df)
+#getting last tweetis in single string
+combined_tweets = ""
+for tweet in tweets: 
+    combined_tweets = combined_tweets + tweet.text + "\n"
+
+combined_tweets = re.sub(r'http\S+', '', combined_tweets)
+print(combined_tweets)
+# print(tweets_df)
 '''
 Google Cloud Natural Language AI
 '''
+
+
+
+
+
