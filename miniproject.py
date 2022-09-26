@@ -3,7 +3,8 @@ import tweepy
 import pandas as pd
 import re
 from google.cloud import language_v1
-
+import os
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/Users/alandautov/Desktop/EC463-Mini-project/ec463-miniproject-363700-d23fada107c6.json"
 '''
 basic variables
 '''
@@ -74,12 +75,26 @@ for tweet in tweets:
     combined_tweets = combined_tweets + tweet.text + "\n"
 
 combined_tweets = re.sub(r'http\S+', '', combined_tweets)
-print(combined_tweets)
+# print(combined_tweets)
 # print(tweets_df)
 '''
 Google Cloud Natural Language AI
 '''
+# Instantiates a client
+client = language_v1.LanguageServiceClient()
 
+# The text to analyze
+document = language_v1.Document(
+    content=combined_tweets, type_=language_v1.Document.Type.PLAIN_TEXT
+)
+
+# Detects the sentiment of the text
+sentiment = client.analyze_sentiment(
+    request={"document": document}
+).document_sentiment
+
+print("Text: {}".format(combined_tweets))
+print("Sentiment: {}, {}".format(sentiment.score, sentiment.magnitude))
 
 
 

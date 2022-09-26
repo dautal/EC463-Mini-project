@@ -17,3 +17,7 @@ To-do:
 1. get google cloud language API working in test_sentiment.py
 2. put everything together in miniproject.py
 3. update environment.yml if new package is used
+
+documentSentiment contains the overall sentiment of the document, which consists of the following fields:
+score of the sentiment ranges between -1.0 (negative) and 1.0 (positive) and corresponds to the overall emotional leaning of the text.
+magnitude indicates the overall strength of emotion (both positive and negative) within the given text, between 0.0 and +inf. Unlike score, magnitude is not normalized; each expression of emotion within the text (both positive and negative) contributes to the text's magnitude (so longer text blocks may have greater magnitudes).
