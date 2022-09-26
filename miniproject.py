@@ -5,7 +5,7 @@ import pandas as pd
 import re
 from google.cloud import language_v1
 import os
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/Users/alandautov/Desktop/EC463-Mini-project/ec463-miniproject-363700-d23fada107c6.json"
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/Users/alandautov/Desktop/EC463-Mini-project/ec463-miniproject-363700-f847264176d2.json"
 '''
 basic variables
 '''

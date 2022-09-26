@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "ec463-miniproject-363700",
+  "private_key_id": "f847264176d26ce28d0a76555c93d1cb6f47e995",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCiVuVDKp/DR3Gy\nkDzYwS1v++mJrZc/MrpltnX7CwBII58kbJwHsgQ5Fjhx4+dpCpo1CM5CVD5eD4qy\n6HqNV/xVaB/tjeGDKAXJOkw93fFavrQvDgzFslk+vDbKisJFqjnSb4EpuZewrbl7\nzIeKvc12oPLm3b4jDD8bfU6N7wcD87eYpuhuaqvX/stzz8dVd7YPPJDMKp/hFVWF\n/iK4TLIlLGU5vJlZqzYfjtJtjT2Gmg/SqvRPb24ddkTDVQ8vDTkIzIuv8h4E4BsK\n+2KMXh7kuh3ZEq/PWow10qAVCLscdqSfZNzSIkAxl3Hhfq+nJI0VDR3Gp3jyEivy\nm3qItVPFAgMBAAECggEAEICQ0aEVmH48upAa/1Wzzrxm4w34X/5CIHDJ0Xku0CZ+\n2O8JdWbNMxhlKH6oWW8wec+pV+jEZj9iNAmZ26BkEDKDfFx93h1FaU05ztgu3rCg\nFGBzP+1/UPdFApXUZcyGEDQxhxJMrzMZtdH2vU3KAxMdXgaQe3OVPrAgOiFgLzB/\neL2olyoytoFk4RjLBi7+4T4FuI7uowM5cM8YSBiL9KBL+ck5ksmMgjIHcy7otnl2\n2SH/66WU6Ega4ZVH2hvfcSxQQ2/fPqgJCwULSQpnNMtzFBCnVHAQL5WL/CiyKBeP\n2e3KVS1qO6AjQ2jnCfnNyaNQUnRpfDy8SgW4DYUBiQKBgQDjkkUkzWQK+jZs8j3/\nD1w7Azs2+XADTnWVbzJcI9lcyMYyd2nEsoENyMDRLvB450dXtdwRvqVj5CL208/4\nlEWXPtagNH1W1xUYrMV2Bjp/5M5dEWeFzFHI4YtzHTd+iQHbovFfncqam7ukxv5M\nrqsoS5pUz+/Ipt1JiLvzFIZRUwKBgQC2noJMjQN7aVhXCE6H1TVW6p22Gi2J+eu9\nyDsYTntTAp/QxG3oZ2jlt3dT0Nnymsgtha5V3CAEnm0VJxQ2Nwi+kaLc0BEmOgpZ\nLBk+6HJ2rqlHhfgKiWXixqWRlLoDwDInsIiJdsD1jNo63j3kDR2QAAySLQZjpUVP\nl/wxVHqrhwKBgEQ2R7tsRRx1O3MUeTjGpeKaaVllEwoqrlwIZJPxuulw1Nezq2Rm\nDQDQt9r7suDKkjvcKwa2mmSCsWhCvQfJicJ392U11ov9FDm9L8LcwxQqxSBoYxtb\nzvfjgyUSENxAvOnUwXzjkyMcovYVH4xknrEJWE0rtrfyLEoqTgvijxA5AoGAPOQF\nVjj+nDu39O0UIj55Fo4MIBgCbysh65nD+orQnBEX8KhObVttoorWAuB0i2wIqwUT\n6BUJqACbJp5tItae18v/ndjSnwhjQvBtSoh/Agui7fJBjmHZ0w+hTTVmALIpBwrZ\nu9wY4scgTNilklC9NrKNfn/8zWTiA3QN5vTgIikCgYEArlWEduYTHk6dg9XJFmZl\nHnf7XLM3WzuoFsS630Vj2R59ONKw0Bb7qcjjDH1BIhcD8ZRtGhYGPg7NhFlqzR6j\nDzCLjVytEzWr4M3xjJYouBZ7HU7BTjm6wd3DsK7VQHeScUjBWoJa/pH9fty8ArsJ\n5UCtcX9/r5vsBdZGhhemPZI=\n-----END PRIVATE KEY-----\n",
+  "client_email": "alan-dautov@ec463-miniproject-363700.iam.gserviceaccount.com",
+  "client_id": "101101958437881659246",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/alan-dautov%40ec463-miniproject-363700.iam.gserviceaccount.com"
+}
