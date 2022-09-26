@@ -4,8 +4,8 @@ Python App that analyze twitter user's sentiment and bot score
 ### Steps:
 1. download anaconda (botometer uses a older version of tweepy so package version control is needed)
 2. go to the project directory
-3. download json file and change os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "your/path"
-4. conda env create -f environment.yml
+3. download json file and in miniproject.py change os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "your/path" (line 8)
+4. conda env create -f environment.yml 
 5. conda activate EC463_miniproject
 6. python miniproject.py 
 
