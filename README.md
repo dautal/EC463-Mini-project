@@ -12,7 +12,7 @@ Python App that analyze twitter user's sentiment and bot score
 ## Meaning of the results:
 
 ### Botometer: 
-Markup :    * user: Twitter user object (from the user) plus the language inferred from majority of tweets
+Markup : * user: Twitter user object (from the user) plus the language inferred from majority of tweets
             * raw scores: bot score in the [0,1] range, both using English (all features) and Universal (language-independent) features; 
             in each case we have the overall score and the sub-scores for each bot class (see below for subclass names and definitions)
             * display scores: same as raw scores, but in the [0,5] range
