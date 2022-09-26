@@ -5,9 +5,10 @@ Python App that analyze twitter user's sentiment and bot score
 1. download anaconda (botometer uses a older version of tweepy so package version control is needed)
 2. go to the project directory
 3. download json file and in miniproject.py change os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "your/path" (line 8)
-4. conda env create -f environment.yml 
-5. conda activate EC463_miniproject
-6. python miniproject.py 
+4. If "import error cannot import name 'language_v1' from 'google.cloud' (unknown location)", try typing !pip install google-cloud-language
+5. conda env create -f environment.yml 
+6. conda activate EC463_miniproject
+7. python miniproject.py 
 
 ## Meaning of the results:
 
