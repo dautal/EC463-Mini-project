@@ -1,3 +1,4 @@
+from pickletools import read_uint1
 import botometer
 import tweepy
 import pandas as pd
@@ -39,7 +40,33 @@ bom = botometer.Botometer(wait_on_ratelimit=True,
 # Check a single account by screen name
 result = bom.check_account('@'+username)
 
-# print(result)
+print()
+print("Botometer Result:")
+
+print("Username: " + result["user"]["user_data"]["screen_name"])
+print("Language: " + result["user"]["majority_lang"])
+
+print()
+print("Cap, English: " + str(result["cap"]["english"]))
+print("Cap, Universal: " + str(result["cap"]["universal"]))
+
+print()
+print("Raw Scores, English, Astroturf: " + str(result["raw_scores"]["english"]["astroturf"]))
+print("Raw Scores, English, Fake Follower: " + str(result["raw_scores"]["english"]["fake_follower"]))
+print("Raw Scores, English, Financial: " + str(result["raw_scores"]["english"]["financial"]))
+print("Raw Scores, English, Other: " + str(result["raw_scores"]["english"]["other"]))
+print("Raw Scores, English, Overall: " + str(result["raw_scores"]["english"]["overall"]))
+print("Raw Scores, English, Self Declared: " + str(result["raw_scores"]["english"]["self_declared"]))
+print("Raw Scores, English, Spammer: " + str(result["raw_scores"]["english"]["spammer"]))
+
+print()
+print("Raw Scores, Universal, Astroturf: " + str(result["raw_scores"]["universal"]["astroturf"]))
+print("Raw Scores, Universal, Fake Follower: " + str(result["raw_scores"]["universal"]["fake_follower"]))
+print("Raw Scores, Universal, Financial: " + str(result["raw_scores"]["universal"]["financial"]))
+print("Raw Scores, Universal, Other: " + str(result["raw_scores"]["universal"]["other"]))
+print("Raw Scores, Universal, Overall: " + str(result["raw_scores"]["universal"]["overall"]))
+print("Raw Scores, Universal, Self Declared: " + str(result["raw_scores"]["universal"]["self_declared"]))
+print("Raw Scores, Universal, Spammer: " + str(result["raw_scores"]["universal"]["spammer"]))
 
 
 '''
@@ -74,7 +101,7 @@ combined_tweets = ""
 for tweet in tweets: 
     combined_tweets = combined_tweets + tweet.text + "\n"
 
-combined_tweets = re.sub(r'http\S+', '', combined_tweets)
+combined_tweets = re.sub(r'http\S+', '\0', combined_tweets)
 # print(combined_tweets)
 # print(tweets_df)
 '''
@@ -93,8 +120,14 @@ sentiment = client.analyze_sentiment(
     request={"document": document}
 ).document_sentiment
 
-print("Text: {}".format(combined_tweets))
-print("Sentiment: {}, {}".format(sentiment.score, sentiment.magnitude))
+combined_tweets = combined_tweets.replace("\n", "")
+print("")
+print("Text analyzed:")
+print(combined_tweets)
+# print("Text: {}".format(combined_tweets))
+print("")
+print("Sentiment(score, magnitude): {}, {}".format(sentiment.score, sentiment.magnitude))
+print("")
 
 
 
