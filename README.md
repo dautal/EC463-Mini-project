@@ -12,19 +12,18 @@ Python App that analyze twitter user's sentiment and bot score
 ## Meaning of the results:
 
 ### Botometer: 
-Markup : * user: Twitter user object (from the user) plus the language inferred from majority of tweets
-            * raw scores: bot score in the [0,1] range, both using English (all features) and Universal (language-independent) features; 
-            in each case we have the overall score and the sub-scores for each bot class (see below for subclass names and definitions)
-            * display scores: same as raw scores, but in the [0,5] range
-            * cap: conditional probability that accounts with a score equal to or greater than this are automated; based on inferred language
-            * Meanings of the bot type scores:
+* user: Twitter user object (from the user) plus the language inferred from majority of tweets
+* raw scores: bot score in the [0,1] range, both using English (all features) and Universal (language-independent) features; in each case we have the overall score and the sub-scores for each bot class (see below for subclass names and definitions)
+* display scores: same as raw scores, but in the [0,5] range
+* cap: conditional probability that accounts with a score equal to or greater than this are automated; based on inferred language
+* Meanings of the bot type scores:
 
-    * fake_follower: bots purchased to increase follower counts
-    * self_declared: bots from botwiki.org
-    * astroturf: manually labeled political bots and accounts involved in follow trains that systematically delete content
-    * spammer: accounts labeled as spambots from several datasets
-    * financial: bots that post using cashtags
-    * other: miscellaneous other bots obtained from manual annotation, user feedback, etc.
+* fake_follower: bots purchased to increase follower counts
+* self_declared: bots from botwiki.org
+* astroturf: manually labeled political bots and accounts involved in follow trains that systematically delete content
+* spammer: accounts labeled as spambots from several datasets
+* financial: bots that post using cashtags
+* other: miscellaneous other bots obtained from manual annotation, user feedback, etc.
 
 ### Sentiment:
     * score of the sentiment ranges between -1.0 (negative) and 1.0 (positive) and 
