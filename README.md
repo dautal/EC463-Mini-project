@@ -1,5 +1,5 @@
 # EC463-Mini-project
-Python App that analyze twitter user's sentiment and bot score
+Python App that analyzes twitter user's sentiment and bot score
 
 ### Steps:
 1. download anaconda (botometer uses a older version of tweepy so package version control is needed)
