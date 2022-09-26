@@ -15,7 +15,6 @@ Python App that analyze twitter user's sentiment and bot score
 #### Meanings of the elements in the response
 * **user**: Twitter user object (from the user) plus the language inferred from majority of tweets
 * **raw scores**: bot score in the [0,1] range, both using English (all features) and Universal (language-independent) features; in each case we have the overall score and the sub-scores for each bot class (see below for subclass names and definitions)
-* **display scores**: same as raw scores, but in the [0,5] range
 * **cap**: conditional probability that accounts with a score equal to or greater than this are automated; based on inferred language
 
 #### Meanings of the bot type scores:
@@ -33,3 +32,7 @@ Python App that analyze twitter user's sentiment and bot score
 * **magnitude** indicates the overall strength of emotion (both positive and negative) within the given text, between 0.0 and +inf. 
     Unlike score, magnitude is not normalized; each expression of emotion within the text (both positive and negative) 
     contributes to the text's magnitude (so longer text blocks may have greater magnitudes).
+    
+### Our Results: 
+<img width="1127" alt="test1" src="https://user-images.githubusercontent.com/75428513/192183290-b26aacc7-8d1a-4c92-856a-62cf35f65bd2.png">
+<img width="1128" alt="test2" src="https://user-images.githubusercontent.com/75428513/192183296-110d12df-a4b0-4f13-9d0a-1c1e0e6af838.png">
